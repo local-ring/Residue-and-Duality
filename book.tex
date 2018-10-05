@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox,envcountchap,sectrefs]{svmono}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+%
+\usepackage{type1cm}         
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\graphicspath{{Figures/}}
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+    \addtolength{\oddsidemargin}{-1.25in}
+ 	\addtolength{\evensidemargin}{-1in}
+	\addtolength{\textwidth}{2.5in}
+
+	\addtolength{\topmargin}{0in}
+	\addtolength{\textheight}{1.5in}
+	
+\usepackage{epigraph}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author{Robin Hartshorne}
+\title{Residues and Duality}
+\subtitle{based on a seminar on the work of A. Grothendieck}
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Contents/glossary}
+% \include{Contents/dedic}
+% \include{Contents/foreword}
+\include{Contents/preface}
+% \include{Contents/acknow}
+
+
+\tableofcontents
+
+% \include{Contents/acronym}
+
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \include{Contents/part}
+\include{Contents/introduction}
+\include{Contents/ch1}
+% \include{Contents/ch2}
+% \include{Contents/appendix}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \include{Contents/solutions}
+% \printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\biblstarthook{}
+
+\begin{thebibliography}{99.}%
+% and use \bibitem to create references.
+%
+% Use the following syntax and markup for your references if 
+% the subject of your book is from the field 
+% "Mathematics, Physics, Statistics, Computer Science"
+%
+
+\bibitem{g1957} Grothendieck, Alexandre. "Théorèmes de dualité pour les faisceaux algébriques cohérents." Séminaire Bourbaki 149 (1957): 25.
+\bibitem{g1958} Grothendieck, Alexander. "The cohomology theory of abstract algebraic varieties." Proceedings of the International Congress of Mathematicians. 1958.
+\bibitem{s1959} Serre, J-P. "Groupes algébriques et corps de classes." Hermann (1959).
+\bibitem{report1956} Zariski, Oscar. "Scientific report on the second summer institute, several complex variables. Part III. Algebraic sheaf theory." Bulletin of the American Mathematical Society 62.2 (1956): 117-141.
+\bibitem{z1952} Zariski, Oscar. "Complete linear systems on normal varieties and a generalization of a lemma of Enriques-Severi." Annals of Mathematics (1952): 552-592.
+\end{thebibliography}
+
+\end{document}
+
+
+
+
+
