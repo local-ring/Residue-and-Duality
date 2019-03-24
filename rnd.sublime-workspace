@@ -11,7 +11,7 @@
 			"file": "Contents/introduction.tex",
 			"settings":
 			{
-				"buffer_size": 3346,
+				"buffer_size": 5341,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "book.tex",
 			"settings":
 			{
-				"buffer_size": 3386,
+				"buffer_size": 3384,
 				"line_ending": "Windows"
 			}
 		},
@@ -35,7 +35,7 @@
 			"file": "Contents/glossary.tex",
 			"settings":
 			{
-				"buffer_size": 1124,
+				"buffer_size": 1185,
 				"line_ending": "Windows"
 			}
 		}
@@ -167,6 +167,7 @@
 	],
 	"file_history":
 	[
+		"/C/Program Files/Git/mingw64/share/doc/git-doc/git-push.html",
 		"/C/Users/local_/Desktop/RND/Contents/ch1.tex",
 		"/C/Users/local_/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
 		"/C/Users/local_/Desktop/Tier-3-Preparation/Contents/ch1.tex",
@@ -293,8 +294,7 @@
 		"/D/Hexo/source/_posts/as-if.md",
 		"/D/Hexo/source/_posts/hello-world.md",
 		"/D/Hexo/themes/next/README.en.md",
-		"/D/Hexo/source/_posts/seminar.md",
-		"/D/Hexo/appveyor.yml"
+		"/D/Hexo/source/_posts/seminar.md"
 	],
 	"find":
 	{
@@ -339,7 +339,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -348,15 +348,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3346,
+						"buffer_size": 5341,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3017,
-								3017
+								4654,
+								4654
 							]
 						],
 						"settings":
@@ -365,10 +365,10 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3208.0,
+						"translation.y": 5841.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -397,7 +397,7 @@
 						"translation.y": 3510.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -406,15 +406,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3386,
+						"buffer_size": 3384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								473,
+								473
 							]
 						],
 						"settings":
@@ -423,10 +423,10 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 369.0,
+						"translation.y": 741.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -435,7 +435,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1124,
+						"buffer_size": 1185,
 						"regions":
 						{
 						},

@@ -12,7 +12,7 @@ for any divisor $D$. This is also equivalent to a theorem of Serre (See \cite{fa
 \[h^i(D)=h^{n-i}(K-D)\]
 for $0\leq i\leq n$. In terms of sheaves, this result corresponds to the fact that the $k$-vector spaces
 \[H^i(X,\F)\quad \textrm{ and } \quad H^{n-i}(X,\F^{\vee}\otimes \omega)\]
-are dual to each other, where $\F$ is locally free sheaf, $F^{\vee}$ is the dual sheaf $\uHom(\F,\OO_X)$, and $\omega=\Omega^n_{X/k}$ is the sheaf of $n$-differentials on $X$. Serre gives a proof of this same theorem by analytic methods for a compact complex analytic manifold $X$.\par
+are dual to each other, where $\F$ is locally free sheaf, $F^{\vee}$ is the dual sheaf $\cHom(\F,\OO_X)$, and $\omega=\Omega^n_{X/k}$ is the sheaf of $n$-differentials on $X$. Serre gives a proof of this same theorem by analytic methods for a compact complex analytic manifold $X$.\par
 
 Grothendieck gave some generalizations of these theorems for non-singular projective varieties, and then in \cite{} announced the general theorem for schemes proper over a field, with arbitrary singularities, which is the subject of the present lecture notes.\par 
 
@@ -42,11 +42,45 @@ Now we can jazz up our duality for projective space as follows. We replace $k$ b
 for $G\in D(Y)$, and we replace $F$ by a complex of sheaves $F\in D(X)$. Then the isomorphism $H^n(X,\omega)\cong k$ gives us an isomorphism
 \[Rf_*f^!G \xrightarrow{\sim} G \]
 which we call the {\it trace map}. The Yoneda pairing reappears as a natural map 
-\[R\Hom_X(F,f^!G) \longrightarrow R\Hom_Y(Rf_*F,Rf_*f^!G),\]
+\begin{equation}\label{map1}
+R\Hom_X(F,f^!G) \longrightarrow R\Hom_Y(Rf_*F,Rf_*f^!G),
+\end{equation}
 which, composed with the trace map gives us the {\it duality morphism}
 \[R\Hom_X(F,f^!G) \longrightarrow R\Hom_Y(Rf_*F,G)\]
 which generalize \ref{iso}. This is easily proved to be an isomorphism (III 5.1 below) under the suitable hypotheses on $Y,~F,~G$. In fact, the proof is nothing but ``general nonsense'' once one has the isomorphism \ref{iso1}.
 
 Having examined the case of projective space, we can state the following ideal theorem, which is the primum mobile of these notes, although it may never appear explicitly in this form.
+
+(adjust the symbol, cohomology of sheaf, Hom sheaf and Hom set, eliminate the underline )
+
+\begin{theorem}[Ideal Theorem]
+\begin{enumerate}[(a)]
+\item For every morphism $f:X\to Y$ of finite type of preschemes, there is a functor
+\[f^!:~D(Y)\to D(X)\]
+such that
+ \begin{enumerate}[1)]
+ \item if $g:Y\to Z$ is a second morphism of finite type, then 
+ \[(gf)^!=f^!g^!;\]
+ \item if $f$ is a smooth morphism, then 
+ \[f^!(\G)=f^*(\G)\otimes\omega,\]
+ where $\omega=\Omega^n_{X/Y}$ is the sheaf of highest order differentials;
+ \item if $f$ is a finite morphism, then
+ \[f^!(\G)=\cHom_{\OO_Y}(f_*\OO_X,\G)^\sim. \]
+ \end{enumerate}
+\item For every proper morphism $f:X\to Y$ of preschemes, there is a {\it trace morphism}
+\[\Tr_f:~Rf_*f^!\to\id\]
+of functors from $D(Y)$ to $D(X)$ such that
+ \begin{enumerate}[1)]
+ \item if $g:Y\to Z$ is a second proper morphism, then
+ \[\Tr_{gf}=\Tr_g\Tr_f.\]
+ \item if $X=\P^n_Y$, then $\Tr_f$ is the map deduced from the canonical isomorphism $R^nf_*(\omega)\cong \OO_Y$
+ \item if $f$ is a finite morphism, then $\Tr_f$ is obtained from the natural map ``evaluation at one''
+ \[\cHom_{\OO_Y}(f_*\OO_X,\G)\to \G.\]
+ \end{enumerate}
+\item If $f:X\to Y$ is a proper morphism, then the duality morphism
+\[\Theta_f:~R\Hom_X(\F,f^!\G)\to R\Hom_Y(Rf_*\F,\G)\]
+obtained by composing the natural map \ref{map1} above with $\Tr_f$, is an isomorphism for $\F\in D(X)$ and $\G\in D(Y).$
+ \end{enumerate}
+\end{theorem}
 
 
