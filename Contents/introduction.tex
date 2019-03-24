@@ -24,3 +24,15 @@ we obtain a pairing
 \[H^i(X,\F)\times \Ext^{n-i}_X(\F,\omega)\rightarrow k\]
 which one shows easily to be a perfect pairing \cite{}. This genarlizes the statements above, becasue for a locally free sheaf $\F$,
 \[\Ext^{n-i}(\F,\omega)=\Ext^{n-i}(\OO_X,\F^{\vee}\otimes \omega)=H^{n-i}(X,\F^{\vee}\otimes \omega).\]
+Another way of looking at our duality pairing is as an isomorphism
+\[\Ext^{n-i}_X (\F,\omega)\rightarrow \Hom_k(H^i(X,\F),k).\]
+Since everything is linear over $k$, we may introduce a $k$-vector space $G$, and have an isomorphism
+\[\Ext^{n-i}_X (\F,G\otimes_k\omega)\rightarrow \Hom_k(H^i(X,\F),G).\]
+Before proceeding further, we must introduce the derived category. It will be discussed in detail in Chapter I, but for the moment it will be sufficient to know the following:
+
+For each abelian category $\A$, there is a category $D(\A)$, called the {\it derived category} of $A$, whose objects are complexes of objects of $A$. If $F:\A\rightarrow \B$ is an additive functor from one abelian category to another, then under reasonable conditions there is a {\it right derived functor} \[RF:D(\A)\rightarrow D(\B)\] 
+with the property that for any $X\in Ob(\A)$, if $X$ denotes also the complex which is $X$ in degree zero, and zero elsewhere, then $H^i(RF(X))=R^iF(X)$, where $R^iF$ is the ordinary $i$-th right derived functor of $F$. Finally, if $F:\A\to \B$ and $G:\B\to \CC$ are two functors then 
+\[R(G\circ F)=R(G)\circ R(F).\]
+This replaces the old-fashioned spectral sequence of a composite functor.
+
+Now we can jazz up our duality for projective space as follows. We replace $k$ by a prescheme $Y$, so that $X=\PP^n_Y$. We consider the derived categories $D(X)$ and $D(Y)$ of the categories of $\OO_X$-modules and $\OO_Y$-modules, respectively. Then cohomology $H^i$ becomes $Rf_*$, the derived functor of the direct image functor $f_*$, where $f:X\to Y$ is the projection. $\Ext$
